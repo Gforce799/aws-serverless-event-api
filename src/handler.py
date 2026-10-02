@@ -29,7 +29,7 @@ def lambda_handler(event, context):
     events.put_events(
         Entries=[
             {
-                "Source": "portfolio.api",
+  "Source": "application.api",
                 "DetailType": "PortfolioEventAccepted",
                 "Detail": json.dumps({"event_id": event_id}),
                 "EventBusName": bus_name,
